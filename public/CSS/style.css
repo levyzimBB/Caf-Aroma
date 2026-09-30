@@ -1,0 +1,201 @@
+@import url("./color.css");
+@import url("./animation.CSS");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--off-white);
+    color: var(--cinza-escuro);
+}
+
+header {
+    background: var(--marrom-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--bege-quente);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 60px;
+
+    background: linear-gradient(120deg,
+            var(--bege-claro),
+            var(--marrom-medio));
+
+
+    background-size: 400% 400%;
+    animation: gradientBackground 10.67s, linear infinite;
+
+
+
+
+}
+
+.texto-banner {
+    width: 45%;
+
+    position: relative;
+    animation: slideLeftAnimation 1.6s ease-out forwards;
+}
+
+.texto-banner h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+
+}
+
+.texto-banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 28px;
+
+
+}
+
+.banner img {
+    width: 30%;
+    border-radius: 15px;
+
+
+
+    animation-name: slideRightAnimation;
+    animation-duration: 1.6s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+button {
+    background: var(--marrom-medio);
+    height: 40px;
+    width: 200px;
+    color: var(--branco);
+    font-weight: bold;
+    border-radius: 8px;
+
+
+    animation-name: slideLeftAnimation;
+    animation-duration: 1.6s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+}
+
+
+
+
+/* mudança*/
+
+.titulo {
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 34px;
+
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+
+.card {
+    width: 300px;
+    background: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.4s;
+
+}
+
+.card h3 {
+    margin: 20px 10 10px;
+}
+
+.card p {
+    font-size: 15px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+
+
+.footer {
+
+
+
+    background: var(--marrom-escuro);
+    color: var(--branco);
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100px;
+
+}
+
+#cafe {
+
+    font-weight: bold;
+}
